@@ -1,0 +1,14 @@
+D:\Bootcamp\Assignments\CG-DRIVE\cg_drive\cg_drive\bin\Debug\netcoreapp2.1\cg_drive.deps.json
+D:\Bootcamp\Assignments\CG-DRIVE\cg_drive\cg_drive\bin\Debug\netcoreapp2.1\cg_drive.runtimeconfig.json
+D:\Bootcamp\Assignments\CG-DRIVE\cg_drive\cg_drive\bin\Debug\netcoreapp2.1\cg_drive.runtimeconfig.dev.json
+D:\Bootcamp\Assignments\CG-DRIVE\cg_drive\cg_drive\bin\Debug\netcoreapp2.1\cg_drive.dll
+D:\Bootcamp\Assignments\CG-DRIVE\cg_drive\cg_drive\bin\Debug\netcoreapp2.1\cg_drive.pdb
+D:\Bootcamp\Assignments\CG-DRIVE\cg_drive\cg_drive\obj\Debug\netcoreapp2.1\cg_drive.csproj.CoreCompileInputs.cache
+D:\Bootcamp\Assignments\CG-DRIVE\cg_drive\cg_drive\obj\Debug\netcoreapp2.1\cg_drive.RazorAssemblyInfo.cache
+D:\Bootcamp\Assignments\CG-DRIVE\cg_drive\cg_drive\obj\Debug\netcoreapp2.1\cg_drive.RazorAssemblyInfo.cs
+D:\Bootcamp\Assignments\CG-DRIVE\cg_drive\cg_drive\obj\Debug\netcoreapp2.1\cg_drive.AssemblyInfoInputs.cache
+D:\Bootcamp\Assignments\CG-DRIVE\cg_drive\cg_drive\obj\Debug\netcoreapp2.1\cg_drive.AssemblyInfo.cs
+D:\Bootcamp\Assignments\CG-DRIVE\cg_drive\cg_drive\obj\Debug\netcoreapp2.1\cg_drive.RazorTargetAssemblyInfo.cache
+D:\Bootcamp\Assignments\CG-DRIVE\cg_drive\cg_drive\obj\Debug\netcoreapp2.1\cg_drive.dll
+D:\Bootcamp\Assignments\CG-DRIVE\cg_drive\cg_drive\obj\Debug\netcoreapp2.1\cg_drive.pdb
+D:\Bootcamp\Assignments\CG-DRIVE\cg_drive\cg_drive\obj\Debug\netcoreapp2.1\cg_drive.csprojAssemblyReference.cache

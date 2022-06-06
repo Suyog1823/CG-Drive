@@ -1,0 +1,27 @@
+META TAGS
+charset='UTF-8' --- sets the encoding of the webpage
+http-equiv = '' content='IE=edge' ---- properly compatible in the given specific browser
+name='viewport' ---- resposiveness
+name='keywords' ---- search engiene optimization
+name='refresh' ----- refresh the page every specific time
+
+
+TAGS
+1. div - block element
+2. span - inline element
+3. anchor tag - attribute - target=blank ---- opens in new tab
+4. image - to change the denotions ----put it in csss List-style-type
+5. table tag- td and tr
+6. colspan and rowspan - col merge and row merge respectively
+//But after the spanning any row or column .. extra cells will be remained so thye must be deleted
+
+
+
+CSS Priority
+1. inline has the highest Priority
+2. internal and external has same Priority depends on which is used at last. External must be used over internal
+3. if 2 styles is added in same tag then last one used will be displayed
+
+HW
+1. animation word movement
+2. dart board shapes circles of diff colors
