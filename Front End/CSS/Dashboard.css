@@ -1,0 +1,261 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fff8f7;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.container-1 {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    width: 15%;
+    /* border: 2px solid black; */
+    background-color: #f3f3f3;
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
+}
+
+.brand-logo {
+    position: relative;
+    height: 15%;
+    background-image: url(/images/BrandLogo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* border: 1px solid darkgreen; */
+}
+
+
+.modal__wrapper{
+    position: fixed;
+    left:0;
+    top:0;
+    background: rgba(0, 0, 0, 0.6);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: all .3s ease-in-out;
+}
+
+.modal__container {
+    background: #fff;
+    width: 560px;
+    max-width: 90%;
+    padding: 20px;
+    border-radius: 4px;
+    position: relative;
+    transform: translateY(-100%);
+    transition: all .3s ease-in-out;
+}
+
+h2 {
+    margin-bottom: 10px;
+}
+
+.modal__container button.close {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    font-size: 32px;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.modal__container button.close:hover {
+    color: #6B46C1;
+}
+.active {
+    opacity: 1;
+    pointer-events: auto;
+}
+.modal__wrapper.active .modal__container{
+    transform: translateY(0px);
+}
+
+.foldername{
+    border: none;
+    width: 100%;
+    margin-top: 10px;
+    height: 35px;
+    border-radius: 5px;
+    background-color: lightgrey;
+    color: black;
+    font-size: 20px;
+    text-align: center;
+}
+
+.submit{
+    border: none;
+    width: 100%;
+    height: 33px;
+    border-radius: 5px;
+    background-color: #7b1404;
+    color: white;
+    font-size: 20px;
+}
+
+
+
+
+
+
+
+.add {
+    position: relative;
+    top: 5%;
+    /* height: %; */
+    width: 100%;
+    /* border: 1px solid grey; */
+}
+
+.click {
+    background-color: #7b1404;
+    border-radius: 10px;
+}
+
+.click:hover {
+    background-color: #631003;
+    cursor: pointer;
+}
+
+.click, .link {
+    padding: 12px;
+    font-size: 1.2em;
+    border: none;
+    outline: none;
+    width: 200px;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.list {
+    position: absolute;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: 0.3s;
+}
+
+.newlist {
+    transform: scaleY(1);
+}
+
+.link {
+    background-color: white;
+    color: black;
+}
+
+.link:hover {
+    background-color: grey;
+    transform: scale(1.1);
+}
+
+.navbar {
+    position: relative;
+    height: 85%;
+    /* border: 1px solid red; */
+}
+
+.links {
+    position: relative;
+    height: 40%;
+    width: 100%;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* border: 1px solid blue; */
+    /* padding: 10%; */
+}
+
+.links ul {
+    list-style: none;
+    text-align: center;
+}
+
+.links ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.links ul li {
+    /* border: 1px solid green; */
+    height: 35px;
+    padding-top: 10px;
+}
+
+.links ul li:hover {
+    cursor: pointer;
+    border-left: 4px solid black;
+    background-color: #ffffff;
+    transition: 0.1s;
+}
+
+
+.container-2 {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    position: fixed;
+    z-index: 1;
+    overflow-x: hidden;
+    height: 8%;
+    width: 85%;
+    left: 14.89%;
+    border-bottom: 1px solid lightgrey;
+    /* border: 1px solid red; */
+    background-color: #ffffff;
+}
+
+.message {
+    position: relative;
+    padding: 15px;
+    margin-left: 20px;
+    /* border: 1px solid yellow; */
+}
+
+.search {
+    position: relative;
+    /* border: 1px solid green; */
+    padding: 5px;
+    width: 60%;
+    left: 10%;
+}
+
+.notification {
+    left: 20%;
+    position: relative;
+    padding: 15px;
+    /* border: 1px solid orange; */
+}
+
+.settings {
+    left: 20%;
+    position: relative;
+    padding: 15px;
+    /* border: 1px solid pink; */
+}
+
+.container-2 .search input {
+    width: 80%;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #d3d3d3;
+}
+
+.container-2 .search button {
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: #d3d3d3;
+}
