@@ -96,7 +96,7 @@ function showstorage(data) {
 }
 function loc() {
   if (sessionStorage.getItem("token") != null) {
-    window.location.href = "/Dashboard.html";
+    window.location.href = "Dashboard.html";
   } else {
     alert("Login Credentials are wrong");
   }
