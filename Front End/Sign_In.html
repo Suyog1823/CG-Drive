@@ -18,12 +18,13 @@
       <label>
         <span>Username</span>
         <input type="text" name="username" id="i-username">
+        <div id="firstNametag"></div>
       </label>
       <label>
         <span>Password</span>
         <input type="password" name="password" id="i-password">
       </label>
-      <button class="submit" type="button" onclick="checkUser()">Sign In</button>
+      <button class="submit" type="button" onclick="checkUser()" id="signin">Sign In</button>
       <p class="forgot-pass">Forgot Password ?</p>
 
       <div class="social-media">
@@ -65,7 +66,7 @@
           <span>Password</span>
           <input type="password" id="u-password">
         </label>
-        <button type="button" class="submit" onclick="addData()">Sign Up Now</button>
+        <button type="button" class="submit"  onclick="addData()">Sign Up Now</button>
       </div>
     </div>
   </div>

@@ -89,7 +89,7 @@ function listFolders() {
           let con2 = "";
           con2 += `<span class='iconify' data-icon='tabler:list-details' data-width='26' onclick='details(${folder.folderId},"${folder.folderName}", "${folder.createdBy}", "${folder.createdAt}")'></span>&nbsp;`;
 
-          con2 += `<span class='iconify' data-icon='fluent:delete-20-regular' data-width='30' onclick='deletefolder(${folder.folderId})'></span>`;
+          con2 += `<span class='iconify' data-icon='fluent:delete-20-regular' data-width='30' onclick='warning(${folder.folderId})'></span>`;
 
           div2.classList.add("btn123");
 
@@ -114,6 +114,13 @@ function onLoad() {
 }
 
 onLoad();
+
+function warning (folderID) {
+  if (confirm("Delete !")) {
+    deletefolder(folderID)
+  }
+}
+
 
 function openfile(folderId) {
   sessionStorage.setItem("folderId", folderId);
@@ -145,9 +152,8 @@ function deletefolder(folder) {
   let deleteurl = "http://localhost:61516/api/Folders/" + folder;
   fetch(deleteurl, requestOptions)
     .then((response) => response.text())
-    .then((result) => console.log(result))
+    .then((result) => console.log(listFolders()))
     .catch((error) => console.log("error", error));
-  location.reload();
 }
 
 
@@ -225,6 +231,11 @@ function searchFolder() {
     console.log(err);
   }
 }
+
+// function
+
+
+
 
 function logout() {
   sessionStorage.clear();
