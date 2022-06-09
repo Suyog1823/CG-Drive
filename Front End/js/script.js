@@ -68,23 +68,24 @@ function addData() {
   fetch("http://localhost:61516/api/Users", request)
     .then((response) => response.text())
     .then((result) => sesstorage(result))
-    .catch((error) => console.log("error", error));
+    .catch((error) => alert("error", error));
 }
 
 function sesstorage(result) {
   sessionStorage.setItem("token", result.token);
   sessionStorage.setItem("id", result.id);
   sessionStorage.setItem("name", result.name);
-  console.log(result);
+  show();  
 }
 
-function loc() {
+function show() {
   if (sessionStorage.getItem("token") != null) {
-    window.location.href = "Dashboard.html";
+    window.location.href = "Sign_In.html";
   } else {
     alert("Login Credentials are wrong");
   }
 }
+
 
 function checkUser() {
   let username = document.getElementById("i-username").value;

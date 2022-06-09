@@ -12818,11 +12818,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Bootcamp\\Assignments\\CG Drive\\cg_drive\\cg_drive\\cg_drive.csproj",
+      "projectUniqueName": "C:\\Users\\suyog.bishwokarma\\Desktop\\New folder\\CG-Drive\\cg_drive\\cg_drive\\cg_drive.csproj",
       "projectName": "cg_drive",
-      "projectPath": "D:\\Bootcamp\\Assignments\\CG Drive\\cg_drive\\cg_drive\\cg_drive.csproj",
+      "projectPath": "C:\\Users\\suyog.bishwokarma\\Desktop\\New folder\\CG-Drive\\cg_drive\\cg_drive\\cg_drive.csproj",
       "packagesPath": "C:\\Users\\suyog.bishwokarma\\.nuget\\packages\\",
-      "outputPath": "D:\\Bootcamp\\Assignments\\CG Drive\\cg_drive\\cg_drive\\obj\\",
+      "outputPath": "C:\\Users\\suyog.bishwokarma\\Desktop\\New folder\\CG-Drive\\cg_drive\\cg_drive\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

@@ -12,6 +12,7 @@ namespace cg_drive.RequestModel
         public DateTime? CreatedAt { get; set; }
         public bool? IsDeleted { get; set; }
 
+        public int FolderId { get; set; }
 
     }
 }

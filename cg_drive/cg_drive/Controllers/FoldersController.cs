@@ -31,7 +31,7 @@ namespace cg_drive.Controllers
             {
                 return StatusCode(StatusCodes.Status500InternalServerError,
                 "Error retrieving data from the database");
-            }            
+            }
         }
 
         [HttpGet("{id:int}")]
@@ -73,26 +73,37 @@ namespace cg_drive.Controllers
             return Ok(result);
         }
 
-        /*// PUT: api/Folders/5
-        [HttpPut("{id}")]
-        public void Put(int id, [FromBody] string value)
+        [HttpDelete("{id}")]
+        public IActionResult DeleteFolder(int id)
         {
-        }*/
+            var data = _cg.Folders.Where(obj => obj.FolderId == id).ToList();
+            data.ForEach(res => _cg.Folders.Remove(res));
+            _cg.SaveChanges();
+            return Ok();
+        }
 
-        // DELETE: api/ApiWithActions/5
-        /*[HttpDelete("{FolderName}")]
-        public IActionResult DeleteFolder([FromBody] FoldersModel value)
-        {
-            Folders data = _cg.Folders.FirstOrDefault(obj => obj.FolderName == value.FolderName);
-            if ( data.FolderName == value.FolderName)
+            /*// PUT: api/Folders/5
+            [HttpPut("{id}")]
+            public void Put(int id, [FromBody] string value)
             {
-                _cg.Folders.Remove(data);
-                _cg.SaveChanges();
-                return Ok();
-            }
-            else
-            {
-                return BadRequest();
             }*/
+
+            // DELETE: api/ApiWithActions/5
+            /*[HttpDelete("{FolderName}")]
+            public IActionResult DeleteFolder([FromBody] FoldersModel value)
+            {
+                Folders data = _cg.Folders.FirstOrDefault(obj => obj.FolderName == value.FolderName);
+                if ( data.FolderName == value.FolderName)
+                {
+                    _cg.Folders.Remove(data);
+                    _cg.SaveChanges();
+                    return Ok();
+                }
+                else
+                {
+                    return BadRequest();
+                }*/
+        }
+
+
     }
-}

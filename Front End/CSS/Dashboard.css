@@ -230,6 +230,7 @@ h2 {
 }
 
 .links ul {
+    margin-top: 4rem;
     list-style: none;
     text-align: center;
 }

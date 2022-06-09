@@ -26,3 +26,17 @@ D:\Bootcamp\Assignments\CG Drive\cg_drive\cg_drive\obj\Debug\netcoreapp2.1\cg_dr
 D:\Bootcamp\Assignments\CG Drive\cg_drive\cg_drive\obj\Debug\netcoreapp2.1\cg_drive.RazorTargetAssemblyInfo.cache
 D:\Bootcamp\Assignments\CG Drive\cg_drive\cg_drive\obj\Debug\netcoreapp2.1\cg_drive.dll
 D:\Bootcamp\Assignments\CG Drive\cg_drive\cg_drive\obj\Debug\netcoreapp2.1\cg_drive.pdb
+C:\Users\suyog.bishwokarma\Desktop\New folder\CG-Drive\cg_drive\cg_drive\bin\Debug\netcoreapp2.1\cg_drive.deps.json
+C:\Users\suyog.bishwokarma\Desktop\New folder\CG-Drive\cg_drive\cg_drive\bin\Debug\netcoreapp2.1\cg_drive.runtimeconfig.json
+C:\Users\suyog.bishwokarma\Desktop\New folder\CG-Drive\cg_drive\cg_drive\bin\Debug\netcoreapp2.1\cg_drive.runtimeconfig.dev.json
+C:\Users\suyog.bishwokarma\Desktop\New folder\CG-Drive\cg_drive\cg_drive\bin\Debug\netcoreapp2.1\cg_drive.dll
+C:\Users\suyog.bishwokarma\Desktop\New folder\CG-Drive\cg_drive\cg_drive\bin\Debug\netcoreapp2.1\cg_drive.pdb
+C:\Users\suyog.bishwokarma\Desktop\New folder\CG-Drive\cg_drive\cg_drive\obj\Debug\netcoreapp2.1\cg_drive.csprojAssemblyReference.cache
+C:\Users\suyog.bishwokarma\Desktop\New folder\CG-Drive\cg_drive\cg_drive\obj\Debug\netcoreapp2.1\cg_drive.csproj.CoreCompileInputs.cache
+C:\Users\suyog.bishwokarma\Desktop\New folder\CG-Drive\cg_drive\cg_drive\obj\Debug\netcoreapp2.1\cg_drive.RazorAssemblyInfo.cache
+C:\Users\suyog.bishwokarma\Desktop\New folder\CG-Drive\cg_drive\cg_drive\obj\Debug\netcoreapp2.1\cg_drive.RazorAssemblyInfo.cs
+C:\Users\suyog.bishwokarma\Desktop\New folder\CG-Drive\cg_drive\cg_drive\obj\Debug\netcoreapp2.1\cg_drive.AssemblyInfoInputs.cache
+C:\Users\suyog.bishwokarma\Desktop\New folder\CG-Drive\cg_drive\cg_drive\obj\Debug\netcoreapp2.1\cg_drive.AssemblyInfo.cs
+C:\Users\suyog.bishwokarma\Desktop\New folder\CG-Drive\cg_drive\cg_drive\obj\Debug\netcoreapp2.1\cg_drive.RazorTargetAssemblyInfo.cache
+C:\Users\suyog.bishwokarma\Desktop\New folder\CG-Drive\cg_drive\cg_drive\obj\Debug\netcoreapp2.1\cg_drive.dll
+C:\Users\suyog.bishwokarma\Desktop\New folder\CG-Drive\cg_drive\cg_drive\obj\Debug\netcoreapp2.1\cg_drive.pdb

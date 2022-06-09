@@ -138,6 +138,7 @@ function warning(id){
 
 
 function deletefolder(folder) {
+  debugger;
   var raw = "";
   var requestOptions = {
     method: "DELETE",
