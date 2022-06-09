@@ -108,56 +108,12 @@ function listFolders() {
   
 }
 
-const choose = document.getElementById("ufile").value;
-console.log(choose);
-
-
-
-function thisFileUpload() {
-  debugger;
-  let value = choose.files[0];
-  var formdata = new FormData();
-  formdata.append("files", value);
-
-  var requestOptions = {
-    method: "POST",
-    body: formdata,
-    redirect: "follow",
-  };
-
-  fetch(
-    "http://localhost:61516/api/Documents/upload?createdAt=" +
-      curr.toISOString() +
-      "&createdBy=" +
-      sessionStorage.getItem(id) +
-      "&isDeleted=false",
-
-    requestOptions
-  )
-    .then((response) => response.text())
-
-    .then((result) => {
-      console.log(result);
-
-      listFolders();
-    })
-
-    .catch((error) => console.log("error", error));
-}
-
 
 function onLoad() {
   listFolders(); 
 }
 
 onLoad();
-
-function warning (folderID) {
-  if (confirm("Delete !")) {
-    deletefolder(folderID)
-  }
-}
-
 
 function openfile(folderId) {
   sessionStorage.setItem("folderId", folderId);
@@ -170,12 +126,15 @@ function details(folderId, folderName, foldercreatedby, foldercreatedat) {
       "Folder id: " + folderId + "\n" +
       "Folder name: " +  folderName +  "\n" +
       "Folder created by: " +  foldercreatedby + "\n" +
-      "Folder created at: " + foldercreatedat + "\n",
-     
-    
+      "Folder created at: " + foldercreatedat + "\n",       
   );
 }
 
+function warning(id){
+  if(confirm("You sure you want to delete it?")){
+    deletefolder(id);
+  }
+}
 
 
 function deletefolder(folder) {
@@ -191,6 +150,7 @@ function deletefolder(folder) {
     .then((response) => response.text())
     .then((result) => console.log(listFolders()))
     .catch((error) => console.log("error", error));
+  // location.reload();
 }
 
 
@@ -268,11 +228,6 @@ function searchFolder() {
     console.log(err);
   }
 }
-
-// function
-
-
-
 
 function logout() {
   sessionStorage.clear();

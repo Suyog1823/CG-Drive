@@ -1,42 +1,34 @@
-
 document.getElementById("signin").disabled = true;
 var fvalid = document.getElementById("i-username");
 
 var usernameValidation = function () {
-    let usernameValue = fvalid.value.trim();
-    let validFirstName = /^[A-Za-z]+$/;
-    let usernameErr = document.getElementById("firstNametag");
-    usernameErr.style.color = "red";
+  let usernameValue = fvalid.value.trim();
+  let validFirstName = /^[A-Za-z]+$/;
+  let usernameErr = document.getElementById("firstNametag");
+  usernameErr.style.color = "red";
 
-    if (usernameValue == "") {
-        usernameErr.innerHTML = "Username is required";
-    } else if (!validFirstName.test(usernameValue)) {
-        usernameErr.innerHTML =
-            "Username must be only string without white spaces";
-
-    } else {
-        usernameErr.innerHTML = "";
-        document.getElementById("signin").disabled = false;
-        return true;
-    }
+  if (usernameValue == "") {
+    usernameErr.innerHTML = "Username is required";
+  } else if (!validFirstName.test(usernameValue)) {
+    usernameErr.innerHTML = "Username must be only string without white spaces";
+  } else {
+    usernameErr.innerHTML = "";
+    document.getElementById("signin").disabled = false;
+    return true;
+  }
 };
 
 fvalid.oninput = function () {
-    usernameValidation();
+  usernameValidation();
 };
 
 var success = document.getElementById("i-password");
 
-
-success.addEventListener("keypress", function(event){
-  if(event.key ==  "Enter") {
-    checkUser()
+success.addEventListener("keypress", function (event) {
+  if (event.key == "Enter") {
+    checkUser();
   }
-})
-
-
-
-
+});
 
 document.querySelector(".img-btn").addEventListener("click", function () {
   document.querySelector(".cont").classList.toggle("s-signup");
@@ -81,9 +73,8 @@ function addData() {
 
 function sesstorage(result) {
   sessionStorage.setItem("token", result.token);
-    sessionStorage.setItem("id", result.id);
-    sessionStorage.setItem("name", result.name);
-    window.location.href = "Sign_In.html";
+  sessionStorage.setItem("id", result.id);
+  sessionStorage.setItem("name", result.name);
   console.log(result);
 }
 
@@ -95,18 +86,16 @@ function loc() {
   }
 }
 
-
-
 function checkUser() {
   let username = document.getElementById("i-username").value;
   let password = document.getElementById("i-password").value;
 
   var request = {
     method: "POST",
-    mode: 'cors',
+    mode: "cors",
     body: JSON.stringify({
-      "Username": username,
-      "Password": password,
+      Username: username,
+      Password: password,
     }),
 
     // Adding headers to the request
@@ -116,11 +105,11 @@ function checkUser() {
   };
   try {
     fetch("http://localhost:61516/api/login", request)
-      .then(res => {
-        console.log(res);    
-        return res.json();    
-      })              
-      .then((data) => showstorage(data))
+      .then((res) => {
+        console.log(res);
+        return res.json();
+      })
+      .then((data) => showstorage(data));
   } catch (error) {
     alert("you are not valid");
   }
@@ -141,5 +130,4 @@ function loc() {
   } else {
     alert("Login Credentials are wrong");
   }
-  
 }
