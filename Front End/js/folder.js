@@ -108,6 +108,43 @@ function listFolders() {
   
 }
 
+const choose = document.getElementById("ufile").value;
+console.log(choose);
+
+
+
+function thisFileUpload() {
+  debugger;
+  let value = choose.files[0];
+  var formdata = new FormData();
+  formdata.append("files", value);
+
+  var requestOptions = {
+    method: "POST",
+    body: formdata,
+    redirect: "follow",
+  };
+
+  fetch(
+    "http://localhost:61516/api/Documents/upload?createdAt=" +
+      curr.toISOString() +
+      "&createdBy=" +
+      sessionStorage.getItem(id) +
+      "&isDeleted=false",
+
+    requestOptions
+  )
+    .then((response) => response.text())
+
+    .then((result) => {
+      console.log(result);
+
+      listFolders();
+    })
+
+    .catch((error) => console.log("error", error));
+}
+
 
 function onLoad() {
   listFolders(); 
